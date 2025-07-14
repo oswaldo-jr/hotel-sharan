@@ -1,0 +1,180 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffff;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    background-color: #fdfdfd;
+}
+
+/* Header  */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 30px;
+    left: 0;
+}
+
+.header .container {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    height: 70;
+    width: 1170;
+    display: flex;
+    margin-left: 100px;
+    margin-top: 5px;
+}
+
+.navbar-logo {
+    width: 174px;
+    height: 36px;
+}
+
+.nav-links {
+    height: 21px;
+    display: flex;
+    gap: 50px;
+    align-items: end;
+    margin: 0;
+    color: #fff;
+    list-style: none;
+}
+
+.banner {
+    background-image: url(./img/Background.png);
+    width: 100%;
+    height: 1100px;
+}
+
+/* Formulário de Reserva */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto:wght@400;700&display=swap');
+
+.booking-container {
+    width: 1226px;
+    height: 111px;
+    background-color: #c19b76;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+
+.booking-title h2 {
+    font-family: 'DM Serif Text', serif;
+    font-size: 36px; 
+    color: #2c2c2c;
+    margin: 0;
+    font-weight: 400;
+}
+
+.booking-form {
+    display: flex;
+    align-items: flex-end; 
+    gap: 20px; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.date-inputs {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 243.58px;
+}
+
+.date-inputs input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none; /* Para remover o icone do calendárioo */
+}
+
+.date-inputs input {
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    width: 120px; 
+}
+
+.date-inputs input:focus {
+    outline: none;
+}
+
+.date-inputs input::placeholder {
+    color: #888;
+}
+
+/* Remove a borda do segundo input para parecer um campo único */
+.date-inputs input#check-out {
+    border-left: 1px solid #eee;
+}
+
+
+.form-group select,
+.form-group input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    height: 40px; 
+    box-sizing: border-box;
+}
+
+.form-group select {
+    width: 150px; 
+    color: #333;
+    appearance: none; /* Remove a seta padrão do select */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1.41%200.58L6%205.17L10.59%200.58L12%202L6%208L0%202L1.41%200.58Z%22%20fill%3D%22%23888%22%2F%3E%3C%2Fsvg%3E' );
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+/* Estilo para o placeholder do select */
+.form-group select:invalid {
+    color: #888;
+}
+
+.form-group button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0 25px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 0; 
+}
+
+.form-group button:hover {
+    background-color: #555;
+}
+
+.form-group button {
+    margin-top: 22px; 
+}
+
+/* Seção Sobre */
+.sobre-container {
+    
+}

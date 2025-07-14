@@ -6,86 +6,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Sharai</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
+</body>
+<!-- Cabeçalho com Navbar -->
+<header class="header">
 
-<body>
-    <!-- Cabeçalho com Navbar -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="navbar-logo">SHARAN</div>
-            <div class="img-logo">
-                <img src="./img/img.logo.png" alt="Logo do hotel">
+    <div class="container">
+        <div class="img-logo">
+            <img src="./img/img.logo.png" alt="Logo do hotel">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#POST DETAIL"></a>POST DETAIL</li>
+            <li><a href="#PAGES"></a>PAGES</li>
+            <li><a href="PROJECTS"></a>PROJECTS</li>
+            <li><a href="#SHORTCODES"></a>SHORTCODES</li>
+        </ul>
+    </div>
+    <!-- Texto de destaque da página -->
+</header>
+<div class="banner"></div>
+
+<!-- Formulário de reserva -->
+ <div class="booking-container">
+    <div class="booking-title">
+        <h2>Reserva</h2>
+    </div>
+    <form class="booking-form">
+        <div class="form-group">
+            <label for="dates">Entrada/Saída</label>
+            <div class="date-inputs">
+                <input type="date" id="check-in" placeholder="→ Entrada">
+                <input type="date" id="check-out" placeholder="→ Saída">
             </div>
-            <ul class="nav-links">
-                <li><a href="#inicio"></a>Home</li>
-                <li><a href="#sobre"></a>Sobre</li>
-                <li><a href="acomodações"></a>Acomodações</li>
-                <li><a href="#contato"></a>Contato</li>
-            </ul>
-        </nav>
+        </div>
+        <div class="form-group">
+            <label for="room">Quarto</label>
+            <select id="room">
+                <option value="" disabled selected>Quarto</option>
+                <option value="1">1 Quarto</option>
+                <option value="2">2 Quartos</option>
+                <option value="3">3 Quartos</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="adults">Adulto</label>
+            <select id="adults">
+                <option value="" disabled selected>Adulto</option>
+                <option value="1">1 Adulto</option>
+                <option value="2">2 Adultos</option>
+                <option value="3">3 Adultos</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="children">Criança</label>
+            <select id="children">
+                <option value="" disabled selected>Criança</option>
+                <option value="0">0 Crianças</option>
+                <option value="1">1 Criança</option>
+                <option value="2">2 Crianças</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button type="submit">ENVIAR</button>
+        </div>
+    </form>
+</div>
 
+<!-- Seção sobre -->
+<section class="sobre">
+    <div class="sobre-container">
+        <h2>Sobre</h2>
+        <br>
+        <h3><b>We will be so proud to be our guest. Lorem Ipsum is simply <br>
+                dummy text of the printing.</b></h3> <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quam doloremque ex qui enim,
+            laboriosam porro praesentium maiores alias esse asperiores impedit corporis, facere ut debitis quod
+            harum, voluptatibus accusantium!</p>
 
-        <!-- Texto de destaque da página -->
-        <div class="hero-content" id="inicio">
-            <h1>
-                <span>DISCOVER A</span><br>
-                HOTEL THAT DEFINES A NEW DIMENSION OF <br>
-                <strong>LUXURY</strong>
-            </h1>
+        <div class="sobre-icones">
+            <div class="icone">
+                <h4>Restaurante</h4>
+                <p>Loren ipsum dolor sit amet</p>
+            </div>
+            <div class="icone">
+                <h4>Bem-estar e Spa</h4>
+                <p>Loren ipsum dolor sit amet</p>
+            </div>
+            <div class="icone">
+                <h4>Wi-fi</h4>
+                <p>Loren ipsum dolor sit amet</p>
+            </div>
+            <div class="icone">
+                <h4>Espaço de jogos</h4>
+                <p>Loren ipsum dolor sit amet</p>
+            </div>
+        </div>
+        <!-- Botão Saiba mais -->
+        <a href="#" class="botao-sobre">Saiba mais</a>
+        <div class="sobre-imagem-1">
+            <img src="./img/img.quarto1.jpg" alt="Foto de um quarto de hotel">
+        </div>
+    </div>
+</section>
+
+<!-- Seção acomodações -->
+<div class="seção-de-acomodações">
+    <main id="acomodacoes" class="acomodacoes">
+        <h2>Acomodações</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="./img/img.quarto2.jpg" alt="Quarto Casal">
+                <h3>Casal 01</h3>
+                <p>R$ 299,00 / noite</p>
+                <button>Saiba mais</button>
+            </div>
+
+            <div class="card">
+                <img src="./img/img.quarto3.jpg" alt="Quarto Solteiro">
+                <h3>Solteiro 01</h3>
+                <p>R$ 199,00 / noite</p>
+                <button>Saiba mais</button>
+            </div>
+
+            <div class="card">
+                <img src="./img/img.quarto4.jpg" alt="Quarto Casal">
+                <h3>Casal 02</h3>
+                <p>R$ 299,00 / noite</p>
+                <button>Saiba mais</button>
+            </div>
+        </div>
+</div>
+
+<!-- Seção footer -->
+<footer id="contato" class="footer">
+    <div class="footer__newsletter">
+        <p>Inscreva-se para receber novidades e promoções:</p>
+        <input type="email" placeholder="Digite seu e-mail">
+        <button>Enviar</button>
+    </div>
+
+    <div class="footer__conteudo">
+        <div class="footer__logo">
+            <img src="./img/img.logo.png" alt="Logo do hotel">
+            <h3>SHARAI</h3>
+            <p>Luxo e conforto em um só lugar.</p>
         </div>
 
-        <!-- Formulário de reserva -->
-        <form action="#" class="reserva-form" method="post"></form>
-        <label>Reserva</label>
-        <select name="Suite">
-            <option>Escolha sua suite</option>
-            <option value="Luxo">Luxo</option>
-            <option value="Premiun">Premiun</option>
-        </select>
-        <input type="date" name="Checkin" placeholder="Data de entrada" />
-        <input type="date" name="Checkout" placeholder="Data de saida" />
-        <input type="number" name="Adultos" placeholder="Adultos" />
-        <input type="number" name="Crianças" placeholder="Crianças" />
-        <button type="submit">Enviar</button>
-        </form>
+        <div class="footer__links">
+            <h4>LINKS</h4>
+            <ul>
+                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="#GALLERY">GALLERY</a></li>
+                <li><a href="#BLOG">BLOG</a></li>
+                <li><a href="#PORTIFÓLIO">PORTIFÓLI</a></li>
+                <li><a href="#CONTACT US">CONTAC US</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+            </ul>
+        </div>
 
-        <!-- Seção sobre -->
-         <section class="sobre">
-            <div class="sobre-container">
-            <h2>Sobre</h2>
-            <h3><b>We will be so proud to be our guest. Lorem Ipsum is simply <br>
-            dummy text of the printing.</b></h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quam doloremque ex qui enim, laboriosam porro praesentium maiores alias esse asperiores impedit corporis, facere ut debitis quod harum, voluptatibus accusantium!</p>
-            
-            <div class="sobre-icones">
-                <div class="icone">
-                    <h4>Restaurante</h4>
-                    <p>Loren ipsum dolor sit amet</p>
-                </div>
-                <div class="icone">
-                    <h4>Bem-estar e Spa</h4>
-                    <p>Loren ipsum dolor sit amet</p>
-                </div>
-                <div class="icone">
-                    <h4>Wi-fi</h4>
-                    <p>Loren ipsum dolor sit amet</p>
-                </div>
-                <div class="icone">
-                    <h4>Espaço de jogos</h4>
-                    <p>Loren ipsum dolor sit amet</p>
-                </div>
-            </div>
-            <!-- Botão Saiba mais -->
-             <a href="#" class="botao-sobre">Saiba mais</a>
-             <div class="sobre-imagem">
-                <img src="./img/img.quarto1.jpg" alt="Foto de um quarto de hotel">
-             </div>
-            
-            </div>
-         </section>
-    </header>
+        <div class="footer__acomodacoes">
+            <h4>ACOMODAÇÕES</h4>
+            <ul>
+                <li><a href="#CLASSIC">CLASSIC</a></li>
+                <li><a href="#SUPERIOR">SUPERIOR</a></li>
+                <li><a href="#DELUX">DELUX</a></li>
+                <li><a href="#MASTER">MASTER</a></li>
+                <li><a href="#LUXURY">LUXURY</a></li>
+                <li><a href="#BANQUET HALLS">BANQUET HALLS</a></li>
+            </ul>
+        </div>
 
+        <div class="footer__contato">
+            <h4>FALE CONOSCO</h4>
+            <ul>
+                <li>92 Princess Road, parkvenue,Greater <br>
+                    London, NW18JR, United Kingdom</li>
+                <li>sharandemo@gmail.com</li>
+                <li>(+0091) 912-3456-084</li>
+                <li>(+0091) 912-3456-073</li>
+            </ul>
+        </div>
+    </div>
 
+    <div class="footer__bottom">
+        <p>&copy; 2025 SHARAI Hotel. Todos os direitos reservados.</p>
+    </div>
+</footer>
 
 </body>
 

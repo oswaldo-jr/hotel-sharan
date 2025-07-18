@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Sharai</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
 </body>
 <!-- Cabeçalho com Navbar -->
@@ -28,8 +31,9 @@
 </header>
 <div class="banner"></div>
 
+
 <!-- Formulário de reserva -->
- <div class="booking-container">
+<div class="booking-container">
     <div class="booking-title">
         <h2>Reserva</h2>
     </div>
@@ -70,73 +74,119 @@
         </div>
         <div class="form-group">
             <button type="submit">ENVIAR</button>
+
         </div>
     </form>
 </div>
+
 
 <!-- Seção sobre -->
 <section class="sobre">
     <div class="sobre-container">
         <h2>Sobre</h2>
         <br>
-        <h3><b>We will be so proud to be our guest. Lorem Ipsum is simply <br>
-                dummy text of the printing.</b></h3> <br>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quam doloremque ex qui enim,
-            laboriosam porro praesentium maiores alias esse asperiores impedit corporis, facere ut debitis quod
-            harum, voluptatibus accusantium!</p>
+        <h4><b>We will be so proud to be our guest. Lorem Ipsum is simply <br>
+                dummy text of the printing.</b></h4> <br>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum <br>
+            has been the typesetting industry's standard dummy text ever since the when.Lorem <br>
+            Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
         <div class="sobre-icones">
             <div class="icone">
-                <h4>Restaurante</h4>
-                <p>Loren ipsum dolor sit amet</p>
+                <div class="img-icone">
+                    <img src="./icones/bandeja.img.png" alt="foto de uma bandeja">
+                </div>
+                <div class="loren">
+                    <h4>Restaurante</h4>
+                    <p>Loren ipsum dolor sit amet</p>
+                </div>
             </div>
             <div class="icone">
-                <h4>Bem-estar e Spa</h4>
-                <p>Loren ipsum dolor sit amet</p>
+                <div class="img-icone">
+                    <img src="./icones/spa.img.png" alt="foto spa">
+                </div>
+                <div class="loren">
+                    <h4>Wellness & Spa</h4>
+                    <p>Loren ipsum dolor sit amet</p>
+                </div>
             </div>
             <div class="icone">
-                <h4>Wi-fi</h4>
-                <p>Loren ipsum dolor sit amet</p>
+                <div class="img-icone">
+                    <img src="./icones/wifi.img.png" alt="simbolo do wi-fi">
+                </div>
+                <div class="loren">
+                    <h4>Free Wifi</h4>
+                    <p>Loren ipsum dolor sit amet</p>
+                </div>
             </div>
             <div class="icone">
-                <h4>Espaço de jogos</h4>
-                <p>Loren ipsum dolor sit amet</p>
+                <div class="img-icone">
+                    <img src="./icones/jogos.img.png" alt="foto de carta de baralho">
+                </div>
+                <div class="loren">
+                    <h4>Espaço de jogos</h4>
+                    <p>Loren ipsum dolor sit amet</p>
+                </div>
             </div>
         </div>
         <!-- Botão Saiba mais -->
-        <a href="#" class="botao-sobre">Saiba mais</a>
-        <div class="sobre-imagem-1">
-            <img src="./img/img.quarto1.jpg" alt="Foto de um quarto de hotel">
-        </div>
+        <button class="saiba-mais">SAIBA MAIS</button>
+    </div>
+    <div class="sobre-imagem-1">
+        <img src="./img/img.quarto1.png" alt="Foto de um quarto de hotel">
     </div>
 </section>
 
+
 <!-- Seção acomodações -->
 <div class="seção-de-acomodações">
-    <main id="acomodacoes" class="acomodacoes">
-        <h2>Acomodações</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="./img/img.quarto2.jpg" alt="Quarto Casal">
-                <h3>Casal 01</h3>
-                <p>R$ 299,00 / noite</p>
-                <button>Saiba mais</button>
-            </div>
-
-            <div class="card">
-                <img src="./img/img.quarto3.jpg" alt="Quarto Solteiro">
-                <h3>Solteiro 01</h3>
-                <p>R$ 199,00 / noite</p>
-                <button>Saiba mais</button>
-            </div>
-
-            <div class="card">
-                <img src="./img/img.quarto4.jpg" alt="Quarto Casal">
-                <h3>Casal 02</h3>
-                <p>R$ 299,00 / noite</p>
-                <button>Saiba mais</button>
-            </div>
+    <div class="section-title">
+        <h2 class="title-acomodações">Acomodações</h2>
+        <div class="linha-container">
+            <div class="linha-central"></div>
         </div>
+        <div class="filters-btn">
+            <button class="filter-btn">TODOS</button>
+            <span class="barra">/</span>
+            <button class="filter-btn">CASAL</button>
+            <span class="barra">/</span>
+            <button class="filter-btn">SOLTEIRO</button>
+            <span class="barra">/</span>
+            <button class="filter-btn">SUITE</button>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <img src="" alt="Quarto Casal">
+            <h3>Casal 01</h3>
+            <p>R$ 299,00 / noite</p><br>
+            <p>
+                ⬌ tamanho 30m² &nbsp;&nbsp; 👤 Adultos: 3
+            </p>
+            <button>Saiba mais</button>
+        </div>
+
+        <div class="card">
+            <img src="" alt="Quarto Solteiro">
+            <h3>Solteiro 01</h3>
+            <p>R$ 199,00 / noite</p><br>
+            <p>
+                ⬌ tamanho 30m² &nbsp;&nbsp; 👤 Adultos: 3
+            </p>
+            <button>Saiba mais</button>
+        </div>
+
+        <div class="card">
+            <img src="" alt="Quarto Casal">
+            <h3>Casal 02</h3>
+            <p>R$ 299,00 / noite</p><br>
+            <p>
+                ⬌ tamanho 30m² &nbsp;&nbsp; 👤 Adultos: 3
+            </p>
+            <button>Saiba mais</button>
+        </div>
+    </div>
 </div>
 
 <!-- Seção footer -->
